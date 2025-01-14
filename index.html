@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Twitter Clone</title>
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style type="text/css">
+    /* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    margin: 0;
+    background-color: #f5f8fa;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 20%;
+    background: #1da1f2;
+    color: white;
+    padding: 20px;
+    height: 100vh;
+    position: fixed;
+}
+
+.sidebar h2 {
+    margin-bottom: 20px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    padding: 10px 0;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.sidebar ul li i {
+    margin-right: 10px;
+}
+
+.sidebar .tweet-btn {
+    background: white;
+    color: #1da1f2;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+/* Main Feed */
+.feed {
+    width: 50%;
+    margin-left: 22%;
+    padding: 20px;
+}
+
+.feed h2 {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+}
+
+.tweet-box {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.tweet-box textarea {
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    resize: none;
+}
+
+.tweet-box .tweet-post-btn {
+    background: #1da1f2;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    margin-top: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    display: block;
+    width: 100px;
+}
+
+/* Tweets */
+.tweet {
+    background: white;
+    padding: 15px;
+    margin-top: 10px;
+    border-radius: 8px;
+}
+
+/* Trending Section */
+.trending {
+    width: 25%;
+    position: fixed;
+    right: 0;
+    padding: 20px;
+}
+
+.trending h3 {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+}
+
+.trending ul {
+    list-style: none;
+    padding: 0;
+}
+
+.trending ul li {
+    padding: 8px 0;
+    cursor: pointer;
+    font-weight: bold;
+}
+</style>
+</head>
+<body>
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <h2>Twitter</h2>
+        <ul>
+            <li><i class="fa fa-home"></i> Home</li>
+            <li><i class="fa fa-hashtag"></i> Explore</li>
+            <li><i class="fa fa-bell"></i> Notifications</li>
+            <li><i class="fa fa-envelope"></i> Messages</li>
+            <li><i class="fa fa-user"></i> Profile</li>
+            <li><i class="fa fa-cog"></i> Settings</li>
+        </ul>
+        <button class="tweet-btn">Tweet</button>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="feed">
+        <h2>Home</h2>
+        <div class="tweet-box">
+            <textarea placeholder="What's happening?"></textarea>
+            <button class="tweet-post-btn">Tweet</button>
+        </div>
+        <div class="tweet">
+            <p><strong>@JohnDoe</strong> - Just enjoying my day! 🌞 #GoodVibes</p>
+        </div>
+        <div class="tweet">
+            <p><strong>@JaneDoe</strong> - Excited about the weekend! 🎉 #FridayFeeling</p>
+        </div>
+    </main>
+
+    <!-- Trending Sidebar -->
+    <aside class="trending">
+        <h3>Trending Now</h3>
+        <ul>
+            <li>#TechNews</li>
+            <li>#WebDevelopment</li>
+            <li>#Bootstrap</li>
+            <li>#OpenAI</li>
+        </ul>
+    </aside>
+
+</body>
+</html>
